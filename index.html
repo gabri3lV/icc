@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="background">
+    <ul class="barra">
+        <div>
+            <li class="li"><a href="video.html">Vídeo</a></li>
+            <li class="li"><a href="audio.html">Áudio</a></li>
+        </div>
+        <div>
+            <th class="li.logo img"><img src="img/github_logo.png" alt="GitHub" width="40" height="40"></th>
+            <th class="li.logo img"><img src="img/logo_git.png" alt="GitHub" width="" height="33"></th>  
+        </div> 
+    </ul>
+    <hr>
+    <br>
+    <h5>Aluno:</h5>
+    <ul class="ul">
+        <li class="fonte">
+            <small>Gabriel Vilela Araújo</small>
+        </li>
+        <li class="fonte">
+            <small>RA: 2023.2.08.001</small>
+        </li>
+    </ul>
+    <h5 class="titulo">Git e GitHub</h5>
+    <div>
+    <h4>Git: O que é e Como Usar</h4>
+    <p>
+        O Git é um Sistema de Controle de Versão (VCS) distribuído, essencial para desenvolvedores e equipes que desejam rastrear e gerenciar alterações no código de forma eficiente. Com o Git, você pode:
+    </p>    
+    <p>
+        <b>Rastrear Alterações:</b> Manter um registro detalhado de todas as modificações no seu projeto, permitindo reverter facilmente para versões anteriores, se necessário.
+        <br><b>Colaboração:</b> Facilitar o trabalho em equipe, permitindo que várias pessoas trabalhem no mesmo projeto simultaneamente e mesclem suas alterações em uma fonte final.
+        <br>Para começar a usar o Git, você precisará instalar o software e aprender comandos básicos como <i><mark>git init, git add, git commit, git push e git pull</mark></i>. Esses comandos permitem que você inicie um repositório, adicione arquivos, registre alterações e sincronize seu trabalho com um repositório remoto. 
+        Neste site você aprenderá um pouco mais sobre como funciona cada comando.
+    </p>
+    </div>
+    <div>
+        <h4>GitHub: O que é e Como Usar</h4>
+        <p>
+            O GitHub é uma plataforma online que utiliza o poder do Git, oferecendo uma interface intuitiva e recursos adicionais para facilitar a colaboração. No GitHub, você pode:
+        </p>    
+        <p><b>Hospedar Repositórios:</b> Armazenar seus projetos na nuvem, acessíveis de qualquer lugar.
+        <br><b>Colaboração em Massa:</b> Trabalhar com desenvolvedores do mundo todo, contribuindo para projetos open source ou privados.
+        <br><b>Ferramentas Avançadas:</b> Utilizar uma variedade de ferramentas para automação, integração contínua e gestão de projetos.
+        <br>Para usar o GitHub, crie uma conta gratuita, crie um repositório e comece a colaborar! 
+        <br>Comandos básicos do Git são utilizados junto com a interface do GitHub para gerenciar projetos de maneira eficiente. Além disso, você pode explorar recursos como <i><mark>issues, pull requests e GitHub Actions</mark></i> para melhorar seu fluxo de trabalho.
+        </p>    
+    </div>
+    <hr>
+    <table>
+        <tr>
+            <th class="tabela-header">Comando</th>
+            <th class="tabela-header">Funcionalidade</th>
+            <th class="tabela-header">Uso do Comando</th>
+        </tr>
+        <tr>
+            <td>init</td>
+            <td>Cria um novo repositório Git.</td>
+            <td>$ git init</td>
+        </tr>
+        <tr>
+            <td>clone</td>
+            <td>Clona um repositório Git existente para sua máquina local.</td>
+            <td>$ git clone &lt;url_do_repositorio&gt; </td>                
+        </tr>
+        <tr>
+            <td>branch</td>
+            <td>Exibe, cria, lista e gerencia branches (ramos) no seu repositório.</td>
+            <td>$ git branch (lista branches)                
+                <br>$ git branch &lt;nome_da_branch&gt; (cria uma nova branch)
+            </td>
+        </tr>
+        <tr>
+            <td>checkout</td>
+            <td>Troca para uma branch específica ou recupera arquivos para o seu diretório de trabalho.</td>
+            <td>$ git checkout &lt;nome_da_branch&gt; </td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td>Mostra o status dos arquivos no seu repositório Git (modificados, encenados, etc.).</td>
+            <td>$ git status </td>
+        </tr>
+        <tr>
+            <td>diff</td>
+            <td>Mostra a diferença entre versões de arquivos.</td>
+            <td>$ git diff  (modificações não encenadas)
+                <br>$ git diff --cached  (modificações encenadas)
+            </td>
+        </tr>
+        <tr>
+            <td>add</td>
+            <td>Adiciona arquivos ao staging area (área de preparação) para o próximo commit.</td>
+            <td>$ git add &lt;nome_do_arquivo&gt; </td>
+        </tr>
+        <tr>
+            <td>commit</td>
+            <td>Captura o estado atual do seu projeto em um novo commit.</td>
+            <td>$ git commit -m "&lt;mensagem_do_commit&gt;" </td>
+        </tr>
+        <tr>
+            <td>push</td>
+            <td>Envia os commits locais para um repositório remoto.</td>
+            <td>$ git push &lt;origem&gt; &lt;branch&gt; </td>
+        </tr>
+        <tr>
+            <td>pull</td>
+            <td>Baixa alterações do repositório remoto e incorpora-as ao seu repositório local.</td>
+            <td>$ git pull &lt;origem&gt; &lt;branch&gt; </td>
+        </tr>
+        <tr>
+            <td>revert</td>
+            <td>Desfaz um commit específico, criando um novo commit reverso.</td>
+            <td>$ git revert &lt;commit_hash&gt; </td>
+        </tr>
+        <tr>
+            <td>merge</td>
+            <td>Combina alterações de duas branches diferentes em uma única branch.</td>
+            <td>$ git merge &lt;branch_para_incorporar&gt; </td>
+        </tr>
+        <tr>
+            <td>stash</td>
+            <td>Salva temporariamente alterações não encenadas para que você possa trabalhar em outra coisa.</td>
+            <td>$ git stash  (cria stash)
+                <br>$ git stash pop 
+            </td>
+        </tr>
+        <tr>
+            <td>rm</td>
+            <td>Remove arquivos do seu repositório Git.</td>
+            <td>$ git rm (nome_do_arquivo) </td>
+        </tr>
+        <tr>
+            <td>config</td>
+            <td>Configura variáveis globais ou locais do Git.</td>
+            <td>$ git config --global &lt;chave&gt; &lt;valor&gt;  (configuração global)
+                <br>$ git config &lt;chave&gt; &lt;valor&gt;  (configuração local)
+            </td>
+        </tr>
+        <tr>
+            <td>reset</td>
+            <td>Move o ponteiro HEAD para um commit específico.</td>
+            <td>$ git reset --hard HEAD~1</td>
+        </tr>
+        <tr>
+            <td>remote</td>
+            <td>Exibe, adiciona, remove e gerencia repositórios remotos.</td>
+            <td>$ git remote  (lista remotos)
+            <br>$ git remote add &lt;apelido&gt; &lt;url_do_repositorio&gt;  (adiciona um remoto)</td>
+        </tr>
+        <tr>
+            <td>fetch</td>
+            <td>Baixa alterações do repositório remoto, mas não as incorpora ao seu projeto local.</td>
+            <td>$ git fetch &lt;origem&gt; </td>
+        </tr>
+        <tr>
+            <td>show</td>
+            <td>Mostra o conteúdo de um commit específico.</td>
+            <td>$ git show &lt;commit_hash&gt; </td>
+        </tr>
+        <tr>
+            <td>help</td>
+            <td>Mostra ajuda sobre comandos Git específicos.</td>
+            <td>$ git help &lt;comando&gt; </td>
+        </tr>
+        <tr>
+            <td>rebase</td>
+            <td>Reapplica uma série de commits em cima de outra branch.</td>
+            <td>$ git rebase [nomeDaBranch]
+                <br>$ git rebase -i [referência]^
+            </td>
+        </tr>
+        <tr>
+            <td>blame</td>
+            <td>Mostra qual autor modificou cada linha de um arquivo pela última vez.</td>
+            <td>$ git blame &lt;arquivo&gt; </td>
+        </tr>
+        <tr>
+            <td>tag</td>
+            <td>Cria, lista, exclui e gerencia tags (marcadores) em seu repositório.</td>
+            <td>$ git tag  (lista tags)
+                <br>$ git tag &lt;nome_da_tag&gt; &lt;commit_hash&gt (cria uma tag);  
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
